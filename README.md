@@ -1,23 +1,24 @@
-This Repository includes an Application that is connected to Firebase --- Traversy's ToDo App.
+This link: 
 
-It also includes two other two-do Apps. You must choose one of them and connect the CRUD functions to Firebase. 
+https://github.com/mattkrebs2000/connectingtofirebase/tree/master/todolist
 
+Gives an example of code that is used to connect to Firebase. Please be aware that you will have a firebase.js like this one has but the info in it will be unique. 
 
-The video for this first App is at: https://www.youtube.com/watch?v=N8kYlimhuLw
-
-
-The video for this second App is at: https://www.youtube.com/watch?v=E1E08i2UJGI
+You should use this code as a guide as to how you can connect the following Repo to Firebase.
 
 
-Links for the repos for both of these can be found in the Descriptions of their YouTube Videos. 
+The video for this App is at that you must connect is: https://www.youtube.com/watch?v=9zcMnJI3B7M
 
-Please note the "Public" folder seems to be missing from the second of the two video example repos. If you clone it and get an error AND you don't see the "public" folder you can copy it from another React Repo and the App should work. 
+The link for the Repo that you must connect App is: https://github.com/codebucks27/React-Todo-app
+
+Please note: these aren't videos on how to connect to firebase. You may choose to watch any video or consult with firebase documentation to complement the example that I have provided. 
+
 
 Requirements for this homework assignment. 
 
-    1. You must choose either of these two Repos. Retain the "look" of the App. But add Firebase -include (or change existing) functions which help to Create, Read, Update, and Delete in the Firebase Database.  Becasue the App will be conncted to a Firebase Database, the data for the App should surive from one use to another. 
+    1. Retain the "look" of the ToDo App. But add Firebase -include (or change existing) functions which help to Create, Read, Update, and Delete in the Firebase Database.  Becasue the App will be conncted to a Firebase Database, the data for the App should survive from one use to another. 
 
-    I highly recommend that you use Functional Components and Hooks. In my experience, this kind of code is more "Forgiving" than are Class Components code. 
+    2. Watch the following video and follow the steps to deploy your repository to the web: https://youtu.be/4zWBHbTW0BU
 
-    2. Watch the last 5 minutes of this Video and try to deploy your Firebase App to the web: https://www.youtube.com/watch?v=E1E08i2UJGI
+    3. Pass in a link to your repository and the url of the deployed app. 
 
