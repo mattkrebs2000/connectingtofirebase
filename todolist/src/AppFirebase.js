@@ -79,11 +79,11 @@ const App = () => {
     const datas = {
       id: firebase
         .firestore()
-        .collection("todos")
+        .collection("t")
         .doc().id,
     };
     const db = firebase.firestore();
-    db.collection("todos")
+    db.collection("t")
       .doc(datas.id)
       .set({ title: title, completed: false, id: datas.id })
       .then(() => {

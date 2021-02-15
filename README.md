@@ -13,6 +13,10 @@ The link for the Repo that you must connect App is: https://github.com/codebucks
 
 Please note: these aren't videos on how to connect to firebase. You may choose to watch any video or consult with firebase documentation to complement the example that I have provided. 
 
+Video tutorials on how to "Create" "Read" "Update" and "Delete" can be found at this playlist: 
+
+https://www.youtube.com/playlist?list=PLrXZ7t5tOKZVMeRv7YhDSqO2dAdaP-u7r
+
 
 Requirements for this homework assignment. 
 
