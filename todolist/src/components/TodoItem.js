@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 
 const TodoItem = (props) => {
+
+  // console.log("From Inside TodoItem, What is props", props);
+
   const getStyle = () => {
     return {
       background: "#f4f4f4",
@@ -12,7 +15,7 @@ const TodoItem = (props) => {
   };
 
   useEffect(() => {
-    console.log(props.todo);
+    // console.log(props.todo);
   }, []);
 
   return (

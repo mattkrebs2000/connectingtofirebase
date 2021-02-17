@@ -25,22 +25,28 @@ const App = () => {
   }, [truth]);
 
   const markCompleteGlobal = () => {
-    let id = idOfUpdate;
 
+  
+  
+      let id = idOfUpdate;
     const itemtoupdate = firebase
       .firestore()
-      .collection("todos")
+      .collection("t")
       .doc(id);
 
     itemtoupdate.update({
       completed: truth,
     });
+  // debugger
     setIdOfUpdate(null);
     setTruth(null);
   };
 
   // Toggle Complete
   const markComplete = (id) => {
+
+      debugger
+    console.log("First", idOfUpdate);
     setIdOfUpdate(id);
 
     setTodos(
@@ -54,8 +60,8 @@ const App = () => {
         }
         return todo;
       })
-    );
-    console.log(idOfUpdate, truth, "heeYYY");
+    )
+    console.log("Second", idOfUpdate, truth);
   };
 
   // Delete Todo
@@ -95,7 +101,7 @@ const App = () => {
     setTodos([]);
     return firebase
       .firestore()
-      .collection("todos")
+      .collection("t")
       .get()
       .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {

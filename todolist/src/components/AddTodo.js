@@ -1,14 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 const AddTodo = ({ addTodo }) => {
   const [title, setTitle] = useState("");
 
+  // console.log("This is the new title1", title)
+
+
   const onSubmit = (e) => {
+
+    // console.log("This is the new title2", title)
+
     e.preventDefault();
     addTodo(title);
     setTitle("");
+
+    //  console.log("This is the new title3", title)
   };
+
+ useEffect(() => {
+    setTimeout(console.log("This is the title after a second4",title),3000)
+  }, [title]);
+
+
+
 
   const onChange = (e) => setTitle(e.target.value);
 

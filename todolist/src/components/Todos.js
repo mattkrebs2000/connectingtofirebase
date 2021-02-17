@@ -4,6 +4,9 @@ import PropTypes from "prop-types";
 
 const Todos = ({ todos, markComplete, delTodo }) => {
   return todos.map((todo) => (
+
+    // console.log("From Insde Todos", "here is a single todo", todo, "here is the id", todo.id, "here is the array", todos),
+
     <TodoItem
       key={todo.id}
       todo={todo}

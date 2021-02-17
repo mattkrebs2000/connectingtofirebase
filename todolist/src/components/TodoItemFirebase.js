@@ -12,7 +12,7 @@ const TodoItem = (props) => {
   };
 
   useEffect(() => {
-    console.log(props.todo);
+    // console.log(props.todo);
   }, []);
 
   return (

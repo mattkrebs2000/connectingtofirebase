@@ -13,32 +13,56 @@ const App = () => {
   const [todos, setTodos] = useState([]);
 
   useEffect(() => {
+//  console.log("State of todos", todos);
     axios
       .get("https://jsonplaceholder.typicode.com/todos?_limit=10")
-      .then((res) => setTodos(res.data));
+      .then((res) => setTodos(res.data))
+
+      //  console.log("State of todos", todos);
+    
+     
   }, []);
 
-  // Toggle Complete
+  // useEffect(() => {
+
+  //  if (todos.length > 0) {
+  //   console.log("after the change", todos)
+  //  }
+
+  
+  // }, [todos]);
+
+
   const markComplete = (id) => {
+     // console.log("this is what is passed through the markComplete function", id)
     setTodos(
-      todos.map((todo) => {
-        if (todo.id === id) {
-          todo.completed = !todo.completed;
+      todos.map((to) => {
+
+        //  console.log("This is what 'to' is", to)
+
+        if (to.id === id) {
+          to.completed = !to.completed;
         }
-        return todo;
+        return to;
       })
     );
   };
 
   // Delete Todo
   const delTodo = (id) => {
+
+    // console.log("this is what is passed through the delTodo function", id)
     axios
       .delete(`https://jsonplaceholder.typicode.com/todos/${id}`)
       .then((res) => setTodos([...todos.filter((todo) => todo.id !== id)]));
   };
 
+
   // Add Todo
   const addTodo = (title) => {
+
+    //  console.log("this is what is passed through the addTodo function", title)
+
     axios
       .post("https://jsonplaceholder.typicode.com/todos", {
         title,
