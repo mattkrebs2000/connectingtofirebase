@@ -44,8 +44,6 @@ const App = () => {
 
   // Toggle Complete
   const markComplete = (id) => {
-
-      debugger
     console.log("First", idOfUpdate);
     setIdOfUpdate(id);
 
@@ -67,7 +65,7 @@ const App = () => {
   // Delete Todo
   const delTodo = (id) => {
     const db = firebase.firestore();
-    db.collection("todos")
+    db.collection("t")
       .doc(id)
       .delete()
       .then(() => {
